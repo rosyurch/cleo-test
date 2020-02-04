@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/cleo-test/static/js/main.bf4c1178.chunk.js",
-    "main.js.map": "/cleo-test/static/js/main.bf4c1178.chunk.js.map",
+    "main.js": "/cleo-test/static/js/main.3bfd3b30.chunk.js",
+    "main.js.map": "/cleo-test/static/js/main.3bfd3b30.chunk.js.map",
     "runtime-main.js": "/cleo-test/static/js/runtime-main.4e567a5f.js",
     "runtime-main.js.map": "/cleo-test/static/js/runtime-main.4e567a5f.js.map",
     "static/js/2.640d84a4.chunk.js": "/cleo-test/static/js/2.640d84a4.chunk.js",
     "static/js/2.640d84a4.chunk.js.map": "/cleo-test/static/js/2.640d84a4.chunk.js.map",
     "index.html": "/cleo-test/index.html",
-    "precache-manifest.2fd59e4e3026545e1a7ac94765a076b3.js": "/cleo-test/precache-manifest.2fd59e4e3026545e1a7ac94765a076b3.js",
+    "precache-manifest.2e6a9c26eb254cc888b5ffe180bcca2a.js": "/cleo-test/precache-manifest.2e6a9c26eb254cc888b5ffe180bcca2a.js",
     "service-worker.js": "/cleo-test/service-worker.js",
     "static/js/2.640d84a4.chunk.js.LICENSE.txt": "/cleo-test/static/js/2.640d84a4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4e567a5f.js",
     "static/js/2.640d84a4.chunk.js",
-    "static/js/main.bf4c1178.chunk.js"
+    "static/js/main.3bfd3b30.chunk.js"
   ]
 }
