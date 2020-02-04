@@ -9,8 +9,8 @@ function App() {
     const [profileName, setProfileName] = useState('');
     const [repos, setRepos] = useState([]);
 
-    const getValidProfileName = e => {
-        const input = e.target.value.trim();
+    const getValidProfileName = name => {
+        const input = name.trim();
         const regex = /^[a-zA-Z0-9-]+$/;
 
         if (regex.test(input)) {

@@ -41,7 +41,7 @@ function CurrentRepo(props) {
 
     const id = Number(query.get('id'));
 
-    const repo = repos.filter(r => r.id === id)[0] || []; // filter return single elem array, initially undefined
+    const repo = repos.filter(r => r.id === id)[0] || []; // filter returns single elem array, initially undefined
 
     return (
         <>
