@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import HomePage from './HomePage';
 import Repos from './Repos';
-
-import './App.css';
+import CurrentRepo from './CurrentRepo';
 
 function App() {
-    const [profileName, setProfileName] = useState('gaearon');
+    const [profileName, setProfileName] = useState('');
+    const [repos, setRepos] = useState([]);
 
     const getValidProfileName = e => {
         const input = e.target.value.trim();
@@ -18,17 +18,34 @@ function App() {
         }
     };
 
+    useEffect(() => {
+        async function getData() {
+            const res = await fetch(`https://api.github.com/users/${profileName}/repos`);
+            const data = await res.json();
+
+            setRepos(data);
+        }
+        getData();
+    }, [profileName]);
+
     return (
-        <div className="App">
-            <Router>
-                <Route exact path="/">
-                    <HomePage profileName={profileName} validate={getValidProfileName} />
-                </Route>
-                <Route path="/repos">
-                    <Repos profileName={profileName} />
-                </Route>
-            </Router>
-        </div>
+        <>
+            <div className="App">
+                <Router basename={process.env.PUBLIC_URL}>
+                    <Route exact path="/">
+                        <HomePage profileName={profileName} validate={getValidProfileName} />
+                    </Route>
+
+                    <Route exact path="/repos/">
+                        <Repos repos={repos} />
+                    </Route>
+
+                    <Route path="/repo/">
+                        <CurrentRepo repos={repos} />
+                    </Route>
+                </Router>
+            </div>
+        </>
     );
 }
 
