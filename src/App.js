@@ -22,7 +22,6 @@ function App() {
         async function getData() {
             const res = await fetch(`https://api.github.com/users/${profileName}/repos`);
             const data = await res.json();
-
             setRepos(data);
         }
         getData();

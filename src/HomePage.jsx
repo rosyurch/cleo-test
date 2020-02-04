@@ -16,13 +16,14 @@ const Label = styled.label`
 
 const Input = styled.input`
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #eee;
+    border-radius: 15px;
 
-    &:focus {
+    /* &:focus {
         transform: skew(-10deg);
     }
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; */
 `;
 
 const Button = styled.button`
@@ -109,7 +110,6 @@ function HomePage({ profileName, validate }) {
         async function getData() {
             const res = await fetch(`https://api.github.com/users/${profileName}`);
             const data = await res.json();
-
             setProfileData(data);
         }
         getData();
