@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cleo-test/precache-manifest.5225894dfd1eef237f199dbbb900bea6.js"
+  "/cleo-test/precache-manifest.2fd59e4e3026545e1a7ac94765a076b3.js"
 );
 
 self.addEventListener('message', (event) => {

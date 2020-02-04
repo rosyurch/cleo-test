@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7912d64afcd07fc8e7838c4f2a030284",
+    "revision": "a9b8c3f44130beb7300f5aed1873ba22",
     "url": "/cleo-test/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cleo-test/static/js/2.640d84a4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c8617698aacb52befae9",
-    "url": "/cleo-test/static/js/main.b04b3907.chunk.js"
+    "revision": "dd2cdab47f951138b648",
+    "url": "/cleo-test/static/js/main.bf4c1178.chunk.js"
   },
   {
     "revision": "b0c44b8bb9f268a5e1d7",
