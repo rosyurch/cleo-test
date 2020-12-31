@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import HomePage from './HomePage';
-import Repos from './Repos';
-import CurrentRepo from './CurrentRepo';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomePage from "./HomePage";
+import Repos from "./Repos";
+import CurrentRepo from "./CurrentRepo";
+import { Repo } from "./types/repo";
 
 function App() {
-    const [profileName, setProfileName] = useState('');
-    const [repos, setRepos] = useState([]);
+    const [profileName, setProfileName] = useState("");
+    const [repos, setRepos] = useState<Repo[]>([]);
 
-    const getValidProfileName = name => {
+    const getValidProfileName = (name: string) => {
         const input = name.trim();
         const regex = /^[a-zA-Z0-9-]+$/;
 
@@ -20,7 +20,9 @@ function App() {
 
     useEffect(() => {
         async function getData() {
-            const res = await fetch(`https://api.github.com/users/${profileName}/repos`);
+            const res = await fetch(
+                `https://api.github.com/users/${profileName}/repos`
+            );
             const data = await res.json();
             setRepos(data);
         }
@@ -32,7 +34,10 @@ function App() {
             <div className="App">
                 <Router basename={process.env.PUBLIC_URL}>
                     <Route exact path="/">
-                        <HomePage profileName={profileName} validate={getValidProfileName} />
+                        <HomePage
+                            profileName={profileName}
+                            validate={getValidProfileName}
+                        />
                     </Route>
 
                     <Route exact path="/repos/">

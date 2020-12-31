@@ -1,0 +1,103 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    margin: 10px 0;
+    width: max-content;
+    font-size: 1.2em;
+}
+
+.input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+}
+
+.button {
+    margin: 10px;
+    border: 1px solid #eee;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover,
+.button:active {
+    background-color: #eee;
+    color: #000;
+    transform: skew(-10deg);
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #2fd;
+    color: #2fd;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.link:hover,
+.link:active {
+    background-color: #eee;
+    color: #000;
+    transform: skew(-10deg);
+}
+
+.controls {
+    margin: 0 auto;
+    max-width: 60%;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 630px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 15px;
+}
+
+.img {
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+@media (max-width: 630px) {
+    .img {
+        margin: 15px auto;
+    }
+}
+
+.name {
+    font-size: 2.5em;
+}
+
+@media (max-width: 630px) {
+    .name {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    .bio {
+        margin-bottom: 15px;
+    }
+}

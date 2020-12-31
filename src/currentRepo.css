@@ -1,0 +1,28 @@
+.repo-heading {
+    text-align: center;
+    color: #2fd;
+    font-size: 3.5em;
+    padding: 10px;
+}
+
+.stars {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+    width: max-content;
+}
+
+.description::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to right, #222, #fff);
+}

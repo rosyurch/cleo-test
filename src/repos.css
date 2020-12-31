@@ -1,0 +1,46 @@
+.heading {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.search-wrap {
+    text-align: center;
+}
+
+.search-input {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.checkbox-wrap {
+    text-align: center;
+}
+
+.check-label {
+    position: relative;
+}
+
+.check-input {
+    position: absolute;
+    left: -22px;
+    top: -1px;
+}
+
+.list {
+    list-style-type: none;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.list-item {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.repo-link:hover,
+.repo-link:active {
+    color: #2fd;
+    text-decoration: none;
+}
